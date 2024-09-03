@@ -1,0 +1,82 @@
+/* Custom design */
+.goldColor {
+  color: #a1662f;
+}
+.logo {
+  width: 35%;
+}
+
+.locationText {
+  font-size: 0.4em;
+  color: #a1662f;
+}
+
+/* Bottom nav */
+.sticky-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.social-icons a {
+  color: #a1662f; /* Icon color */
+  font-size: 30px; /* Adjust icon size */
+  margin-right: 15px;
+}
+
+/* Button styles */
+.btn {
+  background-color: #a1662f;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+  background-color: #a1662f;
+  color: white;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 576px) {
+  .btn {
+    font-size: 0.8rem; /* Smaller font size on mobile */
+    padding: 0.3rem 0.8rem; /* Smaller padding on mobile */
+  }
+
+  .social-icons a {
+    font-size: 25px; /* Adjust icon size for mobile */
+    margin-right: 10px; /* Reduce spacing between icons */
+  }
+
+  .logo {
+    width: 50%; /* Larger logo size on very small screens */
+  }
+
+  .locationText {
+    font-size: 0.35em; /* Smaller text size on mobile */
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  .logo {
+    width: 22%;
+  }
+
+  .locationText {
+    font-size: 0.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 12%;
+  }
+
+  .locationText {
+    font-size: 0.7em;
+  }
+}
