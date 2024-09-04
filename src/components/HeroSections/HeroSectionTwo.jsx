@@ -8,7 +8,7 @@ function HeroSectionTwo () {
           <p>Friday & Saturday: 11:30am - 11:00pm</p>
           <p>Sunday: 3:00pm - 9:00pm</p>
         </div>
-        <div className='col-sm-12 col-lg-8 raleway border border-dark customShadow'>
+        <div className='col-sm-12 col-lg-8 raleway customShadow'>
           <div className='p-3'>
             <h4 className='fw-bold text-center'>
               How To Make One Of Our Take Home Pizza Kits

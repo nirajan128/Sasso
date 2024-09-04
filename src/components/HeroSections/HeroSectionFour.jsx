@@ -3,7 +3,7 @@ function HeroSectionFour () {
   return (
     <div className='container mb-5 mt-3'>
       <div className='row p-2 '>
-        <div className='col-sm-12 col-lg-8 border border-black d-flex justify-content-center customShadow'>
+        <div className='col-sm-12 col-lg-8  d-flex justify-content-center customShadow'>
           <img src={f11} alt='' className='img-fluid' />
         </div>
         <div className='col-sm-12 col-lg-4 open-sans'>
