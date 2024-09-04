@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react'
 function BottomNav () {
   const btnRef1 = useRef(null)
   const btnRef2 = useRef(null)
+  const btnRef3 = useRef(null)
   const iconRef1 = useRef(null)
   const iconRef2 = useRef(null)
 
@@ -19,7 +20,7 @@ function BottomNav () {
   }
 
   useGSAP(() => {
-    ;[btnRef1, btnRef2, iconRef1, iconRef2].forEach(animateElement)
+    ;[btnRef1, btnRef2, btnRef3, iconRef1, iconRef2].forEach(animateElement)
   })
 
   return (
@@ -39,6 +40,9 @@ function BottomNav () {
           </button>
           <button type='button' className='btn ms-2' ref={btnRef2}>
             Reservation
+          </button>
+          <button type='button' className='btn ms-2' ref={btnRef3}>
+            Menu
           </button>
         </div>
       </div>

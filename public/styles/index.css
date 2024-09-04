@@ -32,12 +32,18 @@ p {
 .goldColor {
   color: #a1662f;
 }
+.customBg {
+  background-color: #a1662f;
+}
 .goldBackground {
   background-color: #a1662f;
 }
 
 .logo {
   width: 35%;
+}
+.customShadow {
+  box-shadow: 0 0px 10px rgba(161, 102, 47, 1);
 }
 
 .locationText {
@@ -48,6 +54,11 @@ p {
 
 .customImg {
   width: 100%;
+}
+
+.imgContainer {
+  height: 300px;
+  width: 300px;
 }
 
 /* Bottom nav */
@@ -64,6 +75,11 @@ p {
   color: #a1662f; /* Icon color */
   font-size: 30px; /* Adjust icon size */
   margin-right: 15px;
+}
+.social-icons2 a {
+  color: #a1662f; /* Icon color */
+  font-size: 35px; /* Adjust icon size */
+  margin-left: 15px;
 }
 
 .slogan {
@@ -84,7 +100,7 @@ p {
 }
 
 /* Hero section */
-.container {
+.heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,11 +128,22 @@ p {
   object-fit: cover;
 }
 
+/* gallery */
+.img-fluid {
+  height: 100% !important;
+}
+
+.gallery-img:hover {
+  opacity: 1;
+}
+
+/*  */
+
 /* Mobile-specific styles */
 @media (max-width: 576px) {
   .btn {
-    font-size: 0.8rem; /* Smaller font size on mobile */
-    padding: 0.3rem 0.8rem; /* Smaller padding on mobile */
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
   }
 
   .social-icons a {
@@ -143,7 +170,7 @@ p {
     font-size: 0.5em;
   }
 
-  .container {
+  .heroContainer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -164,9 +191,6 @@ p {
     margin-left: -175px; /* Adjust to overlap half of the div */
     z-index: 2;
     margin-top: 0; /* Remove margin added for smaller screens */
-    border: 2px solid transparent; /* Apply border width and style with transparent color initially */
-
-    border-left-color: #000; /* Set left border color */
   }
 
   .image-content {
@@ -174,10 +198,12 @@ p {
     height: 100%;
   }
 
-  /* Font sizes */
-  body {
-    font-size: 18px; /* Slightly larger base font size for tablets */
+  /* Carousel */
+  .carousel-item img {
+    height: 300px; /* Adjust height for smaller screens */
   }
+
+  /* Font sizes */
 
   h1 {
     font-size: 2rem; /* 32px */
@@ -218,5 +244,8 @@ p {
 
   p {
     font-size: 1.25rem; /* 20px */
+  }
+  .carousel-item img {
+    max-height: 400px; /* Smaller height on medium screens */
   }
 }

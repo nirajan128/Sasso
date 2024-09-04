@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
-import logo from '../assets/logo.png'
+import logo from '/src/assets/logo.png'
 function Nav () {
   const logoRef = useRef()
 

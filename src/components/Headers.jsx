@@ -1,5 +1,5 @@
-import Location from './location'
-import Nav from './Nav'
+import Location from './NavBars/Location.jsx'
+import Nav from './NavBars/Nav'
 function Headers () {
   return (
     <>
