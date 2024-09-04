@@ -34,14 +34,14 @@ function BottomNav () {
             <i className='fab fa-instagram' ref={iconRef2}></i>
           </a>
         </div>
-        <div className='nav-buttons'>
-          <button type='button' className='btn' ref={btnRef1}>
+        <div className='nav-buttons raleway fw-bold'>
+          <button type='button' className='btn ' ref={btnRef1}>
             Order
           </button>
-          <button type='button' className='btn ms-2' ref={btnRef2}>
+          <button type='button' className='btn ms-2 ' ref={btnRef2}>
             Reservation
           </button>
-          <button type='button' className='btn ms-2' ref={btnRef3}>
+          <button type='button' className='btn ms-2 fw-bold' ref={btnRef3}>
             Menu
           </button>
         </div>

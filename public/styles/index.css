@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Default fonts sizes */
 h1 {
   font-size: 1.75rem; /* 28px */
 }
@@ -17,6 +19,7 @@ p {
   font-size: 1rem; /* 16px */
 }
 
+/* Fonts */
 .open-sans {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
@@ -28,37 +31,38 @@ p {
   font-family: 'Luckiest Guy', cursive;
 }
 
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Custom design */
 .goldColor {
-  color: #a1662f;
+  color: #800000;
 }
 .customBg {
-  background-color: #a1662f;
-}
-.goldBackground {
-  background-color: #a1662f;
+  background-color: #800000;
 }
 
-.logo {
-  width: 35%;
-}
 .customShadow {
-  box-shadow: 0 0px 10px rgba(161, 102, 47, 1);
+  box-shadow: 0 0px 10px rgba(128, 0, 0, 1);
 }
-
 .locationText {
   font-size: 0.6em;
-  color: #a1662f;
+  color: #b21807;
   font-family: 'Open Sans', sans-serif;
 }
-
-.customImg {
-  width: 100%;
+.slogan {
+  font-family: 'Luckiest Guy', cursive;
+  color: wheat;
+  letter-spacing: 0.1em;
 }
 
-.imgContainer {
-  height: 300px;
-  width: 300px;
+/* Logo */
+.logo {
+  width: 35%;
 }
 
 /* Bottom nav */
@@ -71,31 +75,27 @@ p {
   z-index: 1000;
 }
 
+/* Icons styles */
 .social-icons a {
-  color: #a1662f; /* Icon color */
+  color: #800000; /* Icon color */
   font-size: 30px; /* Adjust icon size */
   margin-right: 15px;
 }
 .social-icons2 a {
-  color: #a1662f; /* Icon color */
+  color: #800000; /* Icon color */
   font-size: 35px; /* Adjust icon size */
   margin-left: 15px;
 }
 
-.slogan {
-  font-family: 'Luckiest Guy', cursive;
-  color: wheat;
-  letter-spacing: 0.1em;
-}
 /* Button styles */
 .btn {
-  background-color: #a1662f;
-  color: black;
+  background-color: #800000;
+  color: white;
 }
 
 .btn:hover {
   transform: scale(0.95);
-  background-color: #a1662f;
+  background-color: #b21807;
   color: white;
 }
 
@@ -109,7 +109,7 @@ p {
 
 .goldBackground {
   width: 100%;
-  background-color: #a1662f;
+  background-color: #b21807;
   position: relative;
   text-align: left;
   padding: 20px;
@@ -122,12 +122,6 @@ p {
   margin-top: 20px;
 }
 
-.image-content {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 /* gallery */
 .img-fluid {
   height: 100% !important;
@@ -137,7 +131,11 @@ p {
   opacity: 1;
 }
 
-/*  */
+.image-content {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 /* Mobile-specific styles */
 @media (max-width: 576px) {
@@ -179,7 +177,7 @@ p {
 
   .goldBackground {
     flex-grow: 1;
-    height: 60vh; /* 80% of the viewport height */
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
