@@ -23,9 +23,9 @@ function BottomNav () {
   })
 
   return (
-    <nav className='sticky-bottom-nav bg-dark'>
+    <nav className='sticky-bottom-nav bg-black'>
       <div className='container d-flex justify-content-between align-items-center'>
-        <div className='social-icons d-flex align-items-center'>
+        <div className='social-icons d-flex align-items-center open-sans text-black fw-bold'>
           <a href='https://www.facebook.com' target='_blank'>
             <i className='fab fa-facebook-f' ref={iconRef1}></i>
           </a>
