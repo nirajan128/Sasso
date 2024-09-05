@@ -1,6 +1,7 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import ModalComponent from '../ModalComponent'
 
 function BottomNav () {
   const btnRef1 = useRef(null)
@@ -8,6 +9,10 @@ function BottomNav () {
   const btnRef3 = useRef(null)
   const iconRef1 = useRef(null)
   const iconRef2 = useRef(null)
+  const [show, setShow] = useState(false)
+
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
   // Reusable animation function
   const animateElement = elementRef => {
@@ -41,11 +46,18 @@ function BottomNav () {
           <button type='button' className='btn ms-2 ' ref={btnRef2}>
             Reservation
           </button>
-          <button type='button' className='btn ms-2 fw-bold' ref={btnRef3}>
+          <button
+            type='button'
+            className='btn ms-2 fw-bold'
+            onClick={handleShow}
+            ref={btnRef3}
+          >
             Menu
           </button>
         </div>
       </div>
+      <ModalComponent show={show} handleClose={handleClose} />{' '}
+      {/* ModalComponent integrated here */}
     </nav>
   )
 }
