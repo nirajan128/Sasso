@@ -140,6 +140,10 @@ p {
   object-fit: cover;
 }
 
+.credits {
+  font-size: 0.5rem;
+}
+
 /* Mobile-specific styles */
 @media (max-width: 576px) {
   .btn {
@@ -250,5 +254,8 @@ p {
   }
   .carousel-item img {
     max-height: 400px; /* Smaller height on medium screens */
+  }
+  .credits {
+    font-size: 0.7rem;
   }
 }
