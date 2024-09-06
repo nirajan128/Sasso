@@ -219,7 +219,6 @@ p {
 
   .fixed-size {
     width: 350px;
-    height: 250px;
     margin-left: -175px; /* Adjust to overlap half of the div */
     z-index: 2;
     margin-top: 0; /* Remove margin added for smaller screens */

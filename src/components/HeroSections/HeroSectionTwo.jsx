@@ -3,7 +3,7 @@ function HeroSectionTwo () {
     <div className='container mb-3'>
       <div className='row p-3 mt-3 '>
         <div className='col-sm-12 col-lg-4 raleway d-flex justify-content-center  flex-column '>
-          <h4 className='fw-bold'>Opening Times</h4>
+          <h4 className='fw-bold'>Opening Hours</h4>
           <p>Monday - Thursday: 11:30am - 10:00pm</p>
           <p>Friday & Saturday: 11:30am - 11:00pm</p>
           <p>Sunday: 3:00pm - 9:00pm</p>
