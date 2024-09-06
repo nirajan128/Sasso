@@ -42,7 +42,12 @@ function ImageGallery () {
               className='img-fluid rounded gallery-img'
               alt={image.alt}
               onClick={() => openModal(image)}
-              style={{ cursor: 'pointer' }}
+              style={{
+                cursor: 'pointer',
+                objectFit: 'cover',
+                height: '100%',
+                width: '100%'
+              }}
             />
           </div>
         ))}

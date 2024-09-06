@@ -36,11 +36,14 @@ function BottomNav () {
           <a href='https://www.facebook.com' target='_blank'>
             <i className='fab fa-facebook-f' ref={iconRef1}></i>
           </a>
-          <a href='https://www.instagram.com' target='_blank'>
+          <a
+            href='https://www.instagram.com/sassopizzas/?hl=en'
+            target='_blank'
+          >
             <i className='fab fa-instagram' ref={iconRef2}></i>
           </a>
         </div>
-        <div className='nav-buttons raleway fw-bold'>
+        <div className='nav-buttons raleway fw-bold p-1'>
           <button type='button' className='btn ' ref={btnRef1}>
             Order
           </button>
@@ -55,6 +58,12 @@ function BottomNav () {
           >
             Menu
           </button>
+
+          <div>
+            <p className='footertext fst-italic'>
+              20% premium for third party delivery services
+            </p>
+          </div>
         </div>
       </div>
       <ModalComponent

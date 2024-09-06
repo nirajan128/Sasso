@@ -84,10 +84,14 @@ p {
 
 /* Icons styles */
 .social-icons a {
-  color: #800000; /* Icon color */
+  color: white; /* Icon color */
   font-size: 30px; /* Adjust icon size */
   margin-right: 15px;
 }
+.social-icons a:hover {
+  color: #800000;
+}
+
 .social-icons2 a {
   color: #800000; /* Icon color */
   font-size: 35px; /* Adjust icon size */
@@ -103,6 +107,11 @@ p {
 .btn:hover {
   transform: scale(0.95);
   background-color: #b21807;
+  color: white;
+}
+.footertext {
+  font-size: 0.8em;
+  margin: 0;
   color: white;
 }
 
@@ -166,6 +175,9 @@ p {
 
   .locationText {
     font-size: 0.35em; /* Smaller text size on mobile */
+  }
+  .footertext {
+    font-size: 0.35em;
   }
 
   .menu-columns {
