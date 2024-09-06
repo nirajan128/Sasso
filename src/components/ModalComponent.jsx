@@ -1,6 +1,22 @@
 /* eslint-disable react/prop-types */
 
 function ModalComponent ({ show, handleClose, menuData }) {
+  function checkPrice (itemPrice) {
+    if (typeof itemPrice === 'number') {
+      return `$${itemPrice.toFixed(2)}`
+    } else if (typeof itemPrice === 'object' && itemPrice !== null) {
+      const smallPrice = itemPrice.small
+        ? `$${itemPrice.small.toFixed(2)}`
+        : 'N/A'
+      const largePrice = itemPrice.large
+        ? `$${itemPrice.large.toFixed(2)}`
+        : 'N/A'
+      return `${smallPrice} - ${largePrice}`
+    } else {
+      return 'Price not available'
+    }
+  }
+
   return (
     <div
       className={`modal fade ${show ? 'show' : ''}`}
@@ -10,12 +26,21 @@ function ModalComponent ({ show, handleClose, menuData }) {
       aria-hidden={!show}
       style={{ display: show ? 'block' : 'none' }}
     >
-      <div className='modal-dialog'>
+      <div
+        className='modal-dialog modal-dialog-scrollable'
+        style={{
+          maxWidth: '70%',
+          margin: 'auto'
+        }}
+      >
         <div className='modal-content'>
           <div className='modal-header'>
-            <h5 className='modal-title' id='exampleModalLabel'>
+            <h2
+              className='modal-title luckyguy text-center goldColor'
+              id='exampleModalLabel'
+            >
               Menu
-            </h5>
+            </h2>
             <button
               type='button'
               className='btn-close'
@@ -25,15 +50,29 @@ function ModalComponent ({ show, handleClose, menuData }) {
             ></button>
           </div>
           <div className='modal-body'>
-            <div className='container raleway'>
-              <div className='row'>
-                {menuData.map((section, sectionIndex) => {
-                  return (
-                    <div className='col-6' key={sectionIndex}>
-                      <p className='fw-bold'>{section.title}</p>
+            <div className='container-fluid raleway p-4'>
+              <div className='menu-columns'>
+                {menuData.map((section, sectionIndex) => (
+                  <div
+                    key={sectionIndex}
+                    className='menu-section mb-3 border border-dark'
+                  >
+                    <div className='p-2'>
+                      <h3 className='fw-bold goldColor '>{section.title}</h3>
+                      {section.menu.map((item, itemIndex) => (
+                        <div key={itemIndex} className='mb-3 '>
+                          <p className='fw-bold mb-1 menuSize'>
+                            {item.name} | {checkPrice(item.price)} |{' '}
+                            {item.status}
+                          </p>
+                          {item.desc && (
+                            <p className='mb-0 menuSize'>{item.desc}</p>
+                          )}
+                        </div>
+                      ))}
                     </div>
-                  )
-                })}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -45,13 +84,6 @@ function ModalComponent ({ show, handleClose, menuData }) {
               onClick={handleClose}
             >
               Close
-            </button>
-            <button
-              type='button'
-              className='btn btn-primary'
-              onClick={handleClose}
-            >
-              Save Changes
             </button>
           </div>
         </div>

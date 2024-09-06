@@ -35,17 +35,6 @@ const menuData = [
     ]
   },
   {
-    title: 'Additions',
-    menu: [
-      { name: 'Sautéed Rapini', price: 9.8, status: 'GF', desc: '' },
-      { name: 'Grilled chicken', price: 7.6, status: 'GF', desc: '' },
-      { name: 'Garlic Butter Shrimp', price: 8.2, status: 'GF', desc: '' },
-      { name: 'Grilled Calamari 1 Pc', price: 10.5, status: '', desc: '' },
-      { name: 'Chicken Parm 1 Pc', price: 10.2, status: '', desc: '' },
-      { name: 'Side of Pasta', price: 11, status: '', desc: '' }
-    ]
-  },
-  {
     title: 'Pasta',
     menu: [
       {
@@ -115,7 +104,7 @@ const menuData = [
       },
       {
         name: 'Oystaz',
-        price: { halfDozen: 24, dozen: 48 },
+        price: { small: 24, large: 48 },
         status: 'GF, DF',
         desc: 'Freshly shucked oysters, mignonette, lemon, horseradish and house hot sauce available'
       },
@@ -145,23 +134,7 @@ const menuData = [
       }
     ]
   },
-  {
-    title: 'As Mains',
-    menu: [
-      {
-        name: 'Trout',
-        price: 29,
-        status: 'GF, DF',
-        desc: 'Seared 7oz fillet garnished with chickpeas and rapini sauteed in a tomato parm sauce'
-      },
-      {
-        name: 'Grilled Calamari',
-        price: 26,
-        status: 'GF, DF',
-        desc: 'Perfectly grilled calamari tossed in fennel, olive and chili tomato stew topped with crispy potatoes'
-      }
-    ]
-  },
+
   {
     title: 'Sammys',
     menu: [
@@ -197,6 +170,25 @@ const menuData = [
       }
     ]
   },
+
+  {
+    title: 'As Mains',
+    menu: [
+      {
+        name: 'Trout',
+        price: 29,
+        status: 'GF, DF',
+        desc: 'Seared 7oz fillet garnished with chickpeas and rapini sauteed in a tomato parm sauce'
+      },
+      {
+        name: 'Grilled Calamari',
+        price: 26,
+        status: 'GF, DF',
+        desc: 'Perfectly grilled calamari tossed in fennel, olive and chili tomato stew topped with crispy potatoes'
+      }
+    ]
+  },
+
   {
     title: 'Pizzas Pomodori',
     menu: [
@@ -224,6 +216,17 @@ const menuData = [
         status: '',
         desc: 'Spicy pepperoncini, confit garlic, rapini, sausage, pecorinio'
       }
+    ]
+  },
+  {
+    title: 'Additions',
+    menu: [
+      { name: 'Sautéed Rapini', price: 9.8, status: 'GF', desc: null },
+      { name: 'Grilled chicken', price: 7.6, status: 'GF', desc: null },
+      { name: 'Garlic Butter Shrimp', price: 8.2, status: 'GF', desc: null },
+      { name: 'Grilled Calamari 1 Pc', price: 10.5, status: '', desc: null },
+      { name: 'Chicken Parm 1 Pc', price: 10.2, status: '', desc: null },
+      { name: 'Side of Pasta', price: 11, status: '', desc: null }
     ]
   }
 ]

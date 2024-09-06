@@ -21,6 +21,10 @@ h4 {
 p {
   font-size: 1rem; /* 16px */
 }
+.menuSize {
+  font-size: 15px !important;
+  height: auto;
+}
 
 /* Fonts */
 .open-sans {
@@ -163,6 +167,17 @@ p {
   .locationText {
     font-size: 0.35em; /* Smaller text size on mobile */
   }
+
+  .menu-columns {
+    /* Start with a single column layout */
+    column-count: 1;
+    column-gap: 20px;
+  }
+
+  .menu-section {
+    break-inside: avoid-column;
+    margin-bottom: 20px;
+  }
 }
 
 /* Styles for larger screens */
@@ -206,6 +221,9 @@ p {
   /* Carousel */
   .carousel-item img {
     height: 300px; /* Adjust height for smaller screens */
+  }
+  .menu-columns {
+    column-count: 2;
   }
 
   /* Font sizes */

@@ -48,7 +48,9 @@ function ImageGallery () {
           <div className='modal-dialog modal-dialog-centered'>
             <div className='modal-content'>
               <div className='modal-header'>
-                <h5 className='modal-title'>{selectedImage.alt}</h5>
+                <h3 className='modal-title luckyguy goldColor'>
+                  {selectedImage.alt}
+                </h3>
                 <button
                   type='button'
                   className='btn-close'
