@@ -1,15 +1,24 @@
 import { useState } from 'react'
+import f1 from '/src/assets/f1.png'
+import f2 from '/src/assets/f2.png'
+import f3 from '/src/assets/f3.png'
+import f4 from '/src/assets/f4.png'
+import f5 from '/src/assets/f5.png'
+import f6 from '/src/assets/f6.png'
+import f7 from '/src/assets/f7.png'
+import f8 from '/src/assets/f8.png'
+import f9 from '/src/assets/f9.png'
 
 const images = [
-  { id: 1, src: '/src/assets/f1.png', alt: 'Pizza : Fungi' },
-  { id: 2, src: '/src/assets/f2.png', alt: 'Pizza: Dirty South' },
-  { id: 3, src: '/src/assets/f3.png', alt: 'Calamari' },
-  { id: 4, src: '/src/assets/f4.png', alt: 'Image 4' },
-  { id: 5, src: '/src/assets/f5.png', alt: 'Image 5' },
-  { id: 6, src: '/src/assets/f6.png', alt: 'Image 6' },
-  { id: 7, src: '/src/assets/f7.png', alt: 'Image 7' },
-  { id: 8, src: '/src/assets/f8.png', alt: 'Image 8' },
-  { id: 9, src: '/src/assets/f9.png', alt: 'Image 9' }
+  { id: 1, src: f1, alt: 'Pizza : Fungi' },
+  { id: 2, src: f2, alt: 'Pizza: Dirty South' },
+  { id: 3, src: f3, alt: 'Calamari' },
+  { id: 4, src: f4, alt: 'Image 4' },
+  { id: 5, src: f5, alt: 'Image 5' },
+  { id: 6, src: f6, alt: 'Image 6' },
+  { id: 7, src: f7, alt: 'Image 7' },
+  { id: 8, src: f8, alt: 'Image 8' },
+  { id: 9, src: f9, alt: 'Image 9' }
 ]
 
 function ImageGallery () {

@@ -2,6 +2,7 @@ import ClippingText from '../ClippingText'
 import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import food from '/src/assets/f12.png'
 
 function Hero () {
   const bgRef = useRef(null)
@@ -29,7 +30,7 @@ function Hero () {
         <ClippingText caption='Local <br> Fresh <br> Deliciously Saucy' />
       </div>
       <div className='fixed-size customShadow' ref={imgRef}>
-        <img src='src/assets/f12.png' alt='Hero' className='image-content' />
+        <img src={food} alt='Hero' className='image-content' />
       </div>
     </div>
   )
