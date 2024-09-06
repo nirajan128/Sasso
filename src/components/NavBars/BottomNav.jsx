@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import ModalComponent from '../ModalComponent'
+import menuData from '../../data.js'
 
 function BottomNav () {
   const btnRef1 = useRef(null)
@@ -56,7 +57,11 @@ function BottomNav () {
           </button>
         </div>
       </div>
-      <ModalComponent show={show} handleClose={handleClose} />{' '}
+      <ModalComponent
+        show={show}
+        handleClose={handleClose}
+        menuData={menuData}
+      />{' '}
       {/* ModalComponent integrated here */}
     </nav>
   )
