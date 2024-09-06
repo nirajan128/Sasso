@@ -1,7 +1,7 @@
 import f11 from '/src/assets/f11.png'
 function HeroSectionFour () {
   return (
-    <div className='container mb-5 mt-3'>
+    <div className='container mb-5 mt-3 customPadding'>
       <div className='row p-2 '>
         <div className='col-sm-12 col-lg-8  d-flex justify-content-center customShadow'>
           <img src={f11} alt='' className='img-fluid' />

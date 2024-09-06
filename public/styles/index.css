@@ -66,6 +66,9 @@ p {
   color: wheat;
   letter-spacing: 0.1em;
 }
+.customPadding {
+  padding: none;
+}
 
 /* Logo */
 .logo {
@@ -235,6 +238,9 @@ p {
   }
   .menu-columns {
     column-count: 2;
+  }
+  .customPadding {
+    padding: 1rem;
   }
 
   /* Font sizes */
